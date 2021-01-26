@@ -31,7 +31,7 @@ public class StorageService {
     }
 
     public String deStorageError(String code) {
-        int i = 0/1;
+        int i = 1/0;
         return "";
     }
 }
