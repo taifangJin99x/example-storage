@@ -18,7 +18,7 @@ spring:
   application:
     name: storage
   datasource:
-    url: jdbc:mysql://rm-bp1v9eku86360zau23o.mysql.rds.aliyuncs.com:3306/seata_order?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://rm-bp1v9eku86360zau23o.mysql.rds.aliyuncs.com:3306/seata_storage?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: Lgy12500
     driver-class-name: com.mysql.jdbc.Driver
@@ -28,7 +28,7 @@ spring:
         server-addr: 47.103.133.107:8848
     sentinel:
       transport:
-        dashboard: 127.0.0.1:8080
+        dashboard: 47.103.133.107:8080
       #eager: true
 
 mybatis-plus:
