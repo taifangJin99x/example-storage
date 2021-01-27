@@ -44,13 +44,13 @@ seata:
     type: nacos
     nacos:
       namespace:
-      serverAddr: localhost:8848
+      serverAddr: 47.103.133.107:8848
       group: SEATA_GROUP
   registry:
     type: nacos
     nacos:
       namespace:
-      server-addr: localhost:8848
+      server-addr: 47.103.133.107:8848
 
 mybatis-plus:
   global-config:
