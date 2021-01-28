@@ -45,4 +45,11 @@ public class StorageController {
         log.info("deStorageError:{}",code);
         return storageService.deStorageError(code);
     }
+
+
+    @GetMapping("/updateStorage")
+    public String updateStorage(@RequestParam("code") String code) {
+        log.info("deStorageError:{}",code);
+        return storageService.updateStorage(code);
+    }
 }

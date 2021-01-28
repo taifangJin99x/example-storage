@@ -1,5 +1,6 @@
 package com.example.storage.service;
 
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.example.storage.entity.Storage;
 import com.example.storage.repository.StorageDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,17 @@ public class StorageService {
 
     public String deStorageError(String code) {
         int i = 1/0;
+        return "";
+    }
+
+    public String updateStorage(String code) {
+        UpdateWrapper<Storage> updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("commodity_code",code);
+        Storage storage = new Storage();
+        storage.setCommodityCode(code);
+        storage.setCount(0L);
+        storageDao.update(storage,updateWrapper);
+
         return "";
     }
 }
