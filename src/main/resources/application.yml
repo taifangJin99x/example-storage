@@ -30,27 +30,27 @@ spring:
       transport:
         dashboard: 47.103.133.107:8080
       #eager: true
-#seata:
-#  enabled: true
-#  application-id: storage-seata
-#  tx-service-group: my_test_tx_group
-#  enable-auto-data-source-proxy: true
-#  service:
-#    vgroup-mapping:
-#      my_test_tx_group: my_test_tx_group
-#    grouplist:
-#      - localhost:8091
-#  config:
-#    type: nacos
-#    nacos:
-#      namespace:
-#      serverAddr: 47.103.133.107:8848
-#      group: SEATA_GROUP
-#  registry:
-#    type: nacos
-#    nacos:
-#      namespace:
-#      server-addr: 47.103.133.107:8848
+seata:
+  enabled: true
+  application-id: storage-seata
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  service:
+    vgroup-mapping:
+      my_test_tx_group: my_test_tx_group
+    grouplist:
+      - localhost:8091
+  config:
+    type: nacos
+    nacos:
+      namespace:
+      serverAddr: 47.103.133.107:8848
+      group: SEATA_GROUP
+  registry:
+    type: nacos
+    nacos:
+      namespace:
+      server-addr: 47.103.133.107:8848
 
 mybatis-plus:
   global-config:
